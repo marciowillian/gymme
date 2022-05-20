@@ -17,6 +17,8 @@
     --neutral-300: hsl(240, 5%, 61%);
     --neutral-400: hsl(240, 5%, 37%);
     --neutral-500: hsl(240, 7%, 8%);
+    /*Cards Colors */
+    --primary-card: hsl(0, 0%, 95%);
     font-size: 62.5%;
 }
 
@@ -311,6 +313,110 @@ body.menu-expanded button {
 
 #trainings img {
     width: 30rem;
+}
+
+#plans {
+    background: var(--neutral-100);
+    padding-top: 8rem;
+}
+
+#plans header {
+    padding-bottom: 5rem;
+}
+
+#plans .wrapper .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+#plans .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 3.2rem;
+    background: var(--primary-card);
+}
+
+#plans .premium {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    gap: 3.2rem;
+    color: var(--neutral-100);
+    background: var(--neutral-500);
+}
+
+#plans .content .card .col-a {
+    width: 30%;
+}
+
+#plans .content .card .col-a .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-inline: 4rem;
+    width: 6.5rem;
+    height: 2.6rem;
+    color: white;
+    border-radius: 1px;
+    background: var(--neutral-500);
+}
+
+#plans .content .card .premium .col-a .tag {
+    background: var(--neutral-100);
+}
+
+#plans .content .card .col-a p {
+    align-items: flex-end;
+    border-top: 2rem;
+}
+
+#plans .content .card .col-a span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#plans .content .card .col-a strong {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1;
+}
+
+#plans .content .card .col-a p {
+    display: flex;
+    margin-inline: 4rem;
+}
+
+#plans .card .benefit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#plans .card .col-b .benefit p {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+
+#plans .content .card .col-b a {
+    margin-top: 3.2rem;
+    border-radius: 1px;
+    border: 1px solid var(--neutral-500);
 }
 
 
