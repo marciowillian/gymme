@@ -336,7 +336,8 @@ body.menu-expanded button {
     justify-content: center;
     align-items: center;
     padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-block: 4rem;
+    padding-inline: 2.9rem;
     gap: 3.2rem;
     background: var(--primary-card);
 }
@@ -348,12 +349,15 @@ body.menu-expanded button {
     align-items: center;
     padding-top: 4rem;
     padding-bottom: 4rem;
-    gap: 3.2rem;
     color: var(--neutral-100);
     background: var(--neutral-500);
 }
 
 #plans .content .card .col-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 30%;
 }
 
@@ -370,8 +374,22 @@ body.menu-expanded button {
     background: var(--neutral-500);
 }
 
-#plans .content .card .premium .col-a .tag {
+#plans .content div.card.premium div.col-a div.tag {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
     background: var(--neutral-100);
+    color: var(--neutral-500);
+}
+
+#plans .content div.card div.col-b div.benefit svg {
+    width: 2rem;
+    height: 2rem;
+    flex: none;
+}
+
+#plans .content div.card.premium div.col-b div.benefit svg path {
+    fill: var(--neutral-100);
 }
 
 #plans .content .card .col-a p {
@@ -386,7 +404,7 @@ body.menu-expanded button {
 }
 
 #plans .content .card .col-a strong {
-    font-size: 4rem;
+    font-size: 2.8rem;
     font-weight: 800;
     line-height: 4rem;
     display: flex;
