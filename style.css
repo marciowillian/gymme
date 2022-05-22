@@ -315,6 +315,44 @@ body.menu-expanded button {
     width: 30rem;
 }
 
+#trainings div.content.swiper div.swiper-slide div.program {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-inline: 2rem;
+    padding-inline: 2rem;
+    bottom: 6rem;
+    width: 80%;
+    /*Font*/
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--neutral-100);
+    gap: 3.2rem;
+}
+
+#trainings div.content.swiper div.swiper-slide div.program div.tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-inline: 4rem;
+    width: 12rem;
+    height: 2.6rem;
+    color: var(--neutral-500);
+    border-radius: 1px;
+    background: var(--neutral-100);
+    /*Font*/
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+
 #plans {
     background: var(--neutral-100);
     padding-top: 8rem;
@@ -435,6 +473,52 @@ body.menu-expanded button {
     margin-top: 3.2rem;
     border-radius: 1px;
     border: 1px solid var(--neutral-500);
+}
+
+#community {
+    background: var(--neutral-100);
+    padding-top: 8rem
+}
+
+#community header {
+    padding-bottom: 0 rem;
+}
+
+#community header svg {
+    padding: 0;
+    align-items: left;
+    width: 35.1rem;
+}
+
+#community img {
+    width: 30rem;
+}
+
+#community div.content.swiper div.swiper-slide div.testimonial {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-inline: 2rem;
+    padding-inline: 2rem;
+    bottom: 6rem;
+    width: 80%;
+    /*Font*/
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--neutral-100);
+    gap: 3.2rem;
+}
+
+#community div.content.swiper div.swiper-slide div.testimonial div.name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    text-align: center;
+    color: var(--neutral-100);
 }
 
 
