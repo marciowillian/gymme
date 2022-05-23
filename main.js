@@ -16,6 +16,17 @@ function closeMenu() {
     document.body.classList.remove('menu-expanded')
 }
 
+/* FAQ */
+/* Funções que incluem e/ou removem a classe que expande a 'pergunta' */
+function openQuestion(param, id) {
+    console.log(id)
+    param.classList.add('question-expanded')
+}
+
+function closeQuestion(param) {
+    param.classList.remove('question-expanded')
+}
+
 /* Swiper carrosel*/
 const swiper = new Swiper('.swiper', {
     slidesPerView: 1,

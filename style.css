@@ -215,6 +215,12 @@ body.menu-expanded button {
 
 /*===== SECTIONS ========================*/
 
+section header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #home {
     margin-bottom: 17.4rem;
     height: 47.8rem;
@@ -481,7 +487,7 @@ body.menu-expanded button {
 }
 
 #community header {
-    padding-bottom: 0 rem;
+    padding-bottom: 0;
 }
 
 #community header svg {
@@ -519,6 +525,71 @@ body.menu-expanded button {
     line-height: 2.4rem;
     text-align: center;
     color: var(--neutral-100);
+}
+
+#faq {
+    background: var(--neutral-100);
+    padding-top: 8rem
+}
+
+#faq header svg {
+    width: 35.1rem;
+    margin-bottom: 6.5rem;
+}
+
+#faq .question {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-bottom: 1.6rem;
+    background: var(--neutral-100);
+    border: 1px solid rgba(19, 19, 22, 0.1);
+    border-radius: 2px;
+}
+
+#faq .question header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+#faq .question p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: left;
+    color: var(--neutral-500);
+}
+
+#faq .question svg {
+    width: 2rem;
+    height: 2rem;
+    margin: 0;
+}
+
+#faq .question .content div {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: var(--neutral-400);
+    /*Question not expanded*/
+    display: none;
+    visibility: hidden;
+}
+
+#faq .question .content div.question-expanded {
+    display: block;
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+    visibility: hidden;
 }
 
 
