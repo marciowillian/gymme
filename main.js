@@ -18,12 +18,25 @@ function closeMenu() {
 
 /* FAQ */
 /* Funções que incluem e/ou removem a classe que expande a 'pergunta' */
+var svgOpenQuestion
+var svgClosedQuestion
+
 function openQuestion(param, id) {
     console.log(id)
+    svgOpenQuestion = id
+    console.log(svgOpenQuestion)
+    id.setAttribute('class', 'hidden')
+    svgClosedQuestion.setAttribute('class', 'visible')
     param.classList.add('question-expanded')
 }
 
-function closeQuestion(param) {
+function closeQuestion(param, id) {
+    console.log(id)
+    id.setAttribute('class', 'hidden')
+    svgOpenQuestion.setAttribute('class', 'visible')
+    svgClosedQuestion = id
+    console.log(svgCloseQuestion)
+
     param.classList.remove('question-expanded')
 }
 

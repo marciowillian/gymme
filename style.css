@@ -589,7 +589,10 @@ section header {
 
 .hidden {
     display: none;
-    visibility: hidden;
+}
+
+.visible {
+    display: block;
 }
 
 
